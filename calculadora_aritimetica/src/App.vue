@@ -21,6 +21,12 @@
       case 'div':
         estado.resultado = estado.numero2 !== 0 ? (estado.numero1 / estado.numero2) : 'Não se divide por 0';
         break;
+      case 'pow': 
+        estado.resultado = Math.pow(estado.numero1, estado.numero2);
+        break;
+      case 'raiz':
+        estado.resultado = Math.sqrt(estado.numero1);
+        break;
     }
   } 
 
