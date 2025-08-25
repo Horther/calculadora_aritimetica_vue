@@ -36,7 +36,7 @@
 <template>
   <div class="container p-5 mb-4 mt-4 bg-dark rounded-4 text-center">
     <h1 class="text-light">Calculadora</h1>
-    <select class="pb-1 text-center" v-model="estado.operacao">
+    <select class="pb-1 text-center" v-model="estado.operacao" @click="calcula()">
       <option value="soma" >Soma</option>
       <option value="sub">Subtração</option>
       <option value="mult">Multiplicação</option>
